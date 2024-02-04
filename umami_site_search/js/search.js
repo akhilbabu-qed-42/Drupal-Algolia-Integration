@@ -35,7 +35,7 @@ const renderHits = (renderOptions, isFirstRender) => {
                      </article>
                    </div>
                    <div class="umami-card__label-items field--label-inline">
-                     <div class="field__item">${instantsearch.snippet({ attribute: 'body', hit: item })}</div>
+                    <div class="field__item">${instantsearch.snippet({ attribute: 'aggregated_text_field', hit: item }) }</div>
                    </div>
                  </div>
                  <a class="umami-card__read-more" href="${item.page_url}">
